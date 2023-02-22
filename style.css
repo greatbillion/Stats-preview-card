@@ -1,0 +1,146 @@
+body {
+    margin: 0%;
+    background-color: hsl(233, 47%, 7%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+.container {
+    display: flex;
+    height: 24.8rem;
+    margin: auto;
+    width: 60rem;
+    margin-top: 9rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+.second {
+    height: 60rem;
+    width: 40rem;
+    background-color: hsl(244, 38%, 16%);
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(244, 38%, 16%);
+    margin-top: 4rem;
+    margin-left: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 22rem;
+    font-family: inter, sans-serif;   
+}
+h1 span {
+    color: hsl(277, 64%, 61%);
+    background-color: hsl(244, 38%, 16%);
+}
+.par {
+    background-color: hsl(244, 38%, 16%);
+    color:hsla(0, 0%, 100%, 0.75);
+    margin-left: 3rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    font-size: 15px;
+    width: 20rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-family: lexend deca, sans-serif;
+
+}
+.analytics{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    width: max-content;
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+.big {
+    color: #ffffff;
+    font-size: 21px;
+    font-family: inter, sans-serif;
+}
+.analytics div p{
+    color: antiquewhite;
+    font-size: 11px;
+    font-family: lexend deca, sans-serif;
+}
+.down div {
+    background-color: hsl(244, 38%, 16%);
+}
+.sed {
+    object-fit: contain;
+    background-color: hsl(277, 64%, 61%);
+}
+.mobile-image {
+    display: none;
+    mix-blend-mode: multiply;
+}
+.pc-image {
+    mix-blend-mode: multiply;
+    
+}
+.sed img {
+    height: 25rem;
+}
+@media screen and (max-width:375px) {
+    * {
+        text-align: center;
+        margin: auto;
+    }
+    body {
+        padding-bottom: 10rem;
+    }
+    .container {
+        flex-direction: column-reverse;
+        height: max-content;
+        margin: auto;
+        width: 20rem;
+        margin-top: 5rem;
+    }
+    .mobile-image {
+        display: block;
+    }
+    .pc-image {
+        display: none;
+    }
+    .sed {
+        height: fit-content;
+        margin-bottom: 0%;
+    }
+    .sed img {
+        height: 16rem;
+        object-fit: cover;
+    }
+    .second {
+        height: fit-content;
+        width: 20rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .second h1 {
+        font-size: 1.8rem;
+        width: 18rem;
+        margin: auto;
+    }
+    .par {
+        margin: auto;
+        width: 16rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 15px;
+    }
+    .analytics {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: fit-content;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .big {
+        margin-bottom: 0.5rem;
+    }
+}
